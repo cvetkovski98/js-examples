@@ -1,5 +1,5 @@
 function NPC(name, hitpoints, is_hero = false) {
-    this.name = `NPC ${NPC.NPCs++}`
+    this.name = name ? name : `NPC ${NPC.NPCs++}`
     this.hitpoints = hitpoints
     this.is_hero = is_hero
     this.is_alive = true
