@@ -17,7 +17,6 @@ ShoppingCart.prototype.addItemToCart = function (name, price, count) {
         update_product.count += count;
     } else {
         let new_cart_item = new CartItem(name, price, count);
-        console.log(new_cart_item)
         this.products.push(new_cart_item);
     }
 }
